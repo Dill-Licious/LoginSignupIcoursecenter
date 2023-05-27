@@ -1,6 +1,11 @@
 /*===========================
 		COMMON css
 ===========================*/
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+@font-face{
+  font-family: 'Montserrat';
+  src: url(https://fonts.cdnfonts.com/css/montserrat);
+}
 
 body {
   font-family: "Inter", sans-serif !important;
@@ -22,32 +27,125 @@ body {
 
 
 /* ============= typography css ============= */
+h1.welcome-text{
+  /* Welcome Back! */
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  left: 55px;
+  top: 200px;
 
-.h6 {
-  color: #262d3f;
-  margin: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 80px;
+  /* or 100% */
+
+
+  color: #323C72;
+
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
 }
 
+h6.logintext{
+  /* Login */
+  position: absolute;
+  width: 175px;
+  height: 50px;
+  left: 690px;
+  top: 40px;
 
-h6,
-.h6 {
-  font-size: 16px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 24px;
+  /* or 40% */
+  color: #323C72;
+
+  border-bottom: 5px solid #323C72 ;
+  padding-bottom: 10px;
+}
+
+h4.signuptext{
+  /* Sign up */
+  position: absolute;
+  width: 170px;
+  height: 40px;
+  left: 690px;
+  top: 40px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 24px;
+  /* or 40% */
+  color: #323C72;
+
+  border-bottom: 5px solid #323C72 ;
+  padding-bottom: 10px;
+}
+
+h2.Course{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+  
+  position: absolute;
+  width: 550px;
+  height: 30px;
+  left: 50px;
+  top: 350px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+  color: #2A497B;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+h3.namaweb{
+  /*i-course Center*/
+  position: absolute;
+  width: 425px;
+  height: 30px;
+  left: 10px;
+  top: 60px;
+  
+  font-family: 'Montserrat';
+  font-style: normal;
   font-weight: 600;
+  font-size: 25px;
+  line-height: 24px;
+  /* or 96% */
+  color: #323C72;
 }
-
-
-
-.text-medium {
-  font-weight: 500;
-}
-
-
 
 .text-sm {
   font-size: 14px;
-  line-height: 22px;
+  line-height: 50px;
 }
 
+img{
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  left: 50px;
+  top: 40px;
+}
 
 
 
@@ -90,7 +188,7 @@ h6,
 
 /* primary buttons */
 .primary-btn {
-  background: #4a6cf7;
+  background: #323C72;
   color: #fff;
 }
 .primary-btn:hover {
@@ -99,12 +197,12 @@ h6,
 
 .primary-btn-outline {
   background: transparent;
-  color: #4a6cf7;
-  border-color: #4a6cf7;
+  color: #323C72;
+  border-color: #323C72;
 }
 .primary-btn-outline:hover {
   color: #fff;
-  background: #4a6cf7;
+  background:#323C72;
 }
 
 
@@ -232,8 +330,8 @@ h6,
 
 .signin-wrapper {
   background: #fff;
-  padding: 60px;
-  min-height: 100px;
+  padding: 80px;
+  min-height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -259,7 +357,7 @@ h6,
   position: relative;
   z-index: 1;
   height: 100%;
-  background: url("../images/auth/signin-image.png");
+  background: url("../images/auth/leftbackground.png");
 }
 
 .auth-cover-wrapper .auth-cover .cover-image {
